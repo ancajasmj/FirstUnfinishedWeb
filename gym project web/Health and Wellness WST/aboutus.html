@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Css/aboutus.css"/>
+    <title>Nutrition</title>
+</head>
+<body>
+    <nav>
+    <div class="nav__logo">
+        <a href="index.html"><img src="images/logo final.png" alt="logo" /></a>
+        </div>
+        
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="training.html">Training</a></li>
+                <li class="link"><a href="nutrition.html">Nutrition</a></li>
+                <li class="link"><a href="aboutus.html">About us</a></li>
+                </ul>
+                <a href="login.html" onclick="confirmNavigation()"><button class="btn">Join Now</button></a>
+        </nav>
+
+        <video autoplay muted loop id="background-video">
+          <source src="video/about us vid.mp4" type="video/mp4">
+      </video>
+
+        <section class="section__container explore__container">
+
+            <div class="explore__header">
+              <h2 class="section__header">ABOUT US</h2>
+            </div>
+      
+            <div class="explore__grid">
+              <div class="explore__card">
+                <span><i class="ri-psychotherapy-fill"></i></span>
+                <h4>Gym Instructors</h4>
+                <p>
+                    Alexander Johnson<br>
+                    Benjamin Miller<br>
+                    Christopher Evans<br>
+                    Daniel Anderson<br>
+                    Ethan Roberts<br>
+                    Gabriel Carter<br>
+                    Isaac Turner<br>
+                    James Mitchell<br>
+                </p>
+                <a href="login.html">Join Now <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="explore__card">
+                <span><i class="ri-settings-2-fill"></i></span>
+                <h4>Equipments</h4>
+                <p>
+                    Barbell<br>
+                    Dumbbells<br>
+                    Kettlebells<br>
+                    Weight Plates<br>
+                    Squat Rack<br>
+                    Bench Press<br>
+                    Pull-up Bar<br>
+                    Cable Machine<br>
+                    Smith Machine<br>
+                    Treadmill<br>
+                    Rowing Machine<br>
+                    Stationary Bike<br>
+                    Leg Press Machine<br>
+                    Lat Pulldown Machine<br>
+                    Resistance Bands<br>
+                </p>
+                <a href="login.html">Join Now <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="explore__card">
+                <span><i class="ri-phone-fill"></i></span>
+                <h4>Contacts</h4>
+                <p>
+                  <b>Phone no.</b> - 09063216981<br>
+                  <b>Fb</b> - Iron Haven fitness Club<br>
+                  <b>IG</b> - IronHaven_Fitness<br>
+                  <b>TikTok</b> - IronH
+
+                </p>
+                <a href="login.html">Join Now <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="explore__card">
+                <span><i class="ri-edit-box-fill"></i></span>
+                <h4>Sign up form</h4>
+                <br>
+    <h2 style="color:white">Sign Up</h2><br>
+    <form action="/submit" method="post">
+        <label style="color:white" for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label style="color:white" for="email"><br>Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label style="color:white" for="password">Password:</label>
+        <input  type="password" id="password" name="password" required>
+        <br><br>
+        <input type="submit" value="Sign Up">
+    </form><br>
+              </div>
+            </div>
+          </section>
+                
+                <div class="footer__bar">
+                  Copyright © 2024 IronHaven. All rights reserved.
+                </div>
+</body>
+</html>

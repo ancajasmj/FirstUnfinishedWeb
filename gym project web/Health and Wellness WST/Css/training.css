@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Place it behind other elements */
+  object-fit: cover; /* Ensures the video covers the whole screen */
+  opacity: 0.7;
+}
+
+/* each contatiner the page consists */
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  padding: 5rem 1rem;
+}
+
+/* each header or main headign of each container/section */
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+/* the button which is join now and book a class */
+.btn {
+padding: 1rem 2rem ;
+outline: none;
+border: none;
+font-size: 1rem;
+color: #ffffff;
+background-color: #f9ac54;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+
+/* the size of the image and its display */
+img {
+width: 100%;
+display: flex;
+}
+
+/* all the anchor elements */
+a {
+text-decoration: none;
+}
+
+/* the body's bg color and the font style */
+body {
+font-family: "Poppins", sans-serif;
+background-color: #000000;
+}
+
+nav {
+max-width: 1200px;
+margin: auto;
+padding: 2rem 1rem 8rem 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+}
+
+nav li{
+    font-size:20px;
+}
+
+/* tje ,ain */
+.nav__logo {
+ max-width: 150px;
+}
+
+.nav__links {
+list-style: none;
+display: flex;
+align-items: center;
+gap: 3rem;
+}
+
+.link a {
+position: relative;
+padding-bottom: 0.75rem;
+color: #ffffff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+
+  .join__grid {
+    bottom: -5rem;
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  
+  .join__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    margin-left:300px;
+    color: #ffffff;
+  }
+  
+  .join__card p {
+    color: #d1d5db;
+    justify-content: center;
+    display: flex;
+    margin-left:300px;
+    overflow: hidden;
+    text-align:center;
+  }
+
+  .join__card2 p{
+    color:white;
+  }
+
+.join__card .core{
+  margin-left:330px;
+  margin-top:150px;
+}
+
+
+  /*each vid*/
+
+  .core {
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .core:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s; /* Smooth transition */
+  }
+  
+  .core::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Overlay effect on hover */
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth transition */
+  }
+  
+  .core:hover::before {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  .footer__bar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+  }

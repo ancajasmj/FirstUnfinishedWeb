@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+/* each contatiner the page consists */
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 1rem;
+  margin-top:-100px;
+}
+
+/* each header or main headign of each container/section */
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+/* the button which is join now and book a class */
+.btn {
+padding: 1rem 2rem ;
+outline: none;
+border: none;
+font-size: 1rem;
+color: #ffffff;
+background-color: #f9ac54;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+
+/* the size of the image and its display */
+img {
+width: 100%;
+display: flex;
+}
+
+/* all the anchor elements */
+a {
+text-decoration: none;
+}
+
+/* the body's bg color and the font style */
+body {
+font-family: "Poppins", sans-serif;
+background-color: #000000;
+}
+
+nav {
+max-width: 1200px;
+margin: auto;
+padding: 2rem 1rem 8rem 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+}
+
+nav li{
+    font-size:20px;
+}
+
+/* tje ,ain */
+.nav__logo {
+ max-width: 150px;
+}
+
+.nav__links {
+list-style: none;
+display: flex;
+align-items: center;
+gap: 3rem;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#background-video {
+position: fixed;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1; /* Place it behind other elements */
+object-fit: cover; /* Ensures the video covers the whole screen */
+opacity: 0.7;
+}
+
+.link a {
+position: relative;
+padding-bottom: 0.75rem;
+color: #ffffff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+
+  .join__grid {
+    bottom: -5rem;
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #1f2125;
+    border-radius: 10px;
+  }
+  
+  .join__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .join__card p {
+    color: #d1d5db;
+  }
+  
+
+  .explore__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .explore__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  /* hovered cards */
+  .explore__card {
+    margin: 0 auto;
+    padding: 2em;
+    width: 250px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+  .explore__card:after, .explore__card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+
+  .explore__card:before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  
+  .explore__card span {
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #ffffff;
+    background-color: #d79447;
+    border-radius: 5px;
+  }
+  
+  .explore__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .explore__card p {
+    margin-bottom: 1rem;
+    color: #d1d5db;
+  }
+  
+  .explore__card a {
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  .footer__bar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+  }
